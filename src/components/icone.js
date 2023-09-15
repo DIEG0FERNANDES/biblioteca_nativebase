@@ -1,17 +1,16 @@
-import {Box,Icon} from 'native-base'
+import { VStack, Icon} from 'native-base'
 
-import {Feather} from'@expo/vector-icons'
+import { Feather } from '@expo/vector-icons'
 
 export default function Icone(props) {
-    return(
-        <Box>
+    return (
+        <VStack>
             <Icon
-                as={Feather}
-                name={props.name}
-                size={props.size}
-                color={props.color}
-                backgroundColor={props.bg}
+            as= {Feather}
+            name= {props.name}
+            size="8"
+            color= "#ffffff" 
             />
-        </Box>
+        </VStack>
     )
 }
