@@ -1,7 +1,13 @@
 import * as React from "react";
-import { Box, Pressable, HStack, Text, Stack, VStack } from "native-base";
+import { Box, Pressable, HStack, Text, Stack, VStack, Content, List, ListItem, Icon } from "native-base";
 import Icone from "../components/icone";
 import Add from "../components/add";
+
+const boards = [
+    { id: 1, title: 'Quadro 1' },
+    { id: 2, title: 'Quadro 2' },
+    { id: 3, title: 'Quadro 3' },
+];
 
 export default function Home() {
     return (
@@ -62,6 +68,16 @@ export default function Home() {
                     </Stack>
                 </VStack>
             </Box>
+            {/* <Content>
+                <List>
+                    {boards.map(board => (
+                        <ListItem key={board.id} onPress={() => navigation.navigate('Board')}>
+                            <Text>{board.title}</Text>
+                            <Icon name="arrow-forward" />
+                        </ListItem>
+                    ))}
+                </List>
+            </Content> */}
             <Add />
         </Box>
     );

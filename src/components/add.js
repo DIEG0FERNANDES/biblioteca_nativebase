@@ -9,6 +9,7 @@ export default function Add() {
                 placement="bottom-right"
                 colorScheme="green"
                 size="20"
+                onPress={() => navigation.navigate('CreateBoard')}
                 icon={<Icon name="plus" as={Feather} />}
             />
         </Container>
